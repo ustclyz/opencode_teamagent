@@ -1,7 +1,7 @@
 ---
 description: 反方：主动质疑、寻找漏洞与假设偏差
 mode: subagent
-model: casimir_hui/qwen3.8-reasoner
+model: YOUR_PROVIDER/qwen3.8-reasoner
 permissions:
   - action: read
     resource: "*"

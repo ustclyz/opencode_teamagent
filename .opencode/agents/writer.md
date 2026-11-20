@@ -1,7 +1,7 @@
 ---
 description: 写手：表达、润色与综合输出
 mode: subagent
-model: casimir_hui/glm-5.3-flash
+model: YOUR_PROVIDER/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

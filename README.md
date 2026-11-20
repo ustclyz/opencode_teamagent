@@ -46,6 +46,8 @@ opencode.example.jsonc       # 无密钥的示例配置(可安全提交)
 
    或直接编辑 `.opencode/agents/*.md` 中的 `model:` 字段。
 
+   > ⚠️ 仓库中的 `model:` 字段写的是占位符 `YOUR_PROVIDER/...`。请把它替换成**你自己的 provider 名**(例如你的 API 网关名称),不要把真实的 provider 名或 API key 提交到仓库。
+
 3. 启动 OpenCode,输入命令即可触发团队讨论:
 
    ```
