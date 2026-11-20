@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // ======================================================================
+  // opencode-teamagent 示例配置（无密钥,可安全提交到仓库）
+  // 使用方法：
+  //   1. 复制本文件为你的 opencode.json / opencode.jsonc
+  //   2. 把 `provider` 换成你自己的 provider 配置（含 API key,不要提交）
+  //   3. 模型名称只需与 .opencode/agents/*.md 中的 model 字段对应
+  // ======================================================================
+  "providers": {
+    // 示例:OpenAI 兼容网关。以你自己的 provider 为准。
+    "example": {
+      "type": "openai",
+      "api": {
+        "baseURL": "https://your-gateway.example.com/v1"
+      },
+      "models": {
+        "deepseek": {},
+        "qwen": {},
+        "glm": {}
+      }
+    }
+  },
+  // 团队成员模型:默认推荐差异较大的三家厂商组合
+  // DeepSeek(架构师) / Qwen(反方) / GLM(写手)
+  "agents": {
+    "architect": { "model": "example/deepseek" },
+    "skeptic": { "model": "example/qwen" },
+    "writer": { "model": "example/glm" }
+  }
+}
