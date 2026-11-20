@@ -1,7 +1,7 @@
 ---
 description: 架构师：从整体视角评估技术方案与架构决策
 mode: subagent
-model: ustc/deepseek-v4-flash
+model: casimir_hui/deepseek-v4-flash
 permissions:
   - action: read
     resource: "*"
